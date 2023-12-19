@@ -18,25 +18,20 @@ const About = () => {
     
 
   return (
-  
-  <> 
-    
-    
- <section className="About1">
+
     <div className="about">
 
         <div className="main-title">
             <h2>About <span>me</span><span className="bg-text">My stats</span></h2>
         </div>
-
+<div className="wrapper">
         <div className="about-container">
             <div className="left-about">
-            <motion.h4 color="orange" >About Me</motion.h4>
+            <motion.h4 color="orange" >About <span>Me</span></motion.h4>
                     <p>
-                    I'm Nishant Surve, a passionate and self-resilient person aspiring to become a Software Developer with an aim to solve problems and designing solutions.<br></br>
-
-My interests includes Backend development , Cloud Computing and familiar with Cross platform development as Flutter Framework<br></br>
-I am an enthusiastic DSA problem solver and solved problems across platform such as LeetCode, Codechef, Codestudio
+                    I'm Nishant Surve, a passionate and self-resilient person aspiring to become a Software Developer with an aim to solve problems and designing solutions.
+My interests includes Backend development , Cloud Computing and familiar with Cross platform development as Flutter Framework,
+I am an enthusiastic DSA problem solver and solved problems across platform such as LeetCode, Codechef, Codestudio.
                     </p>
                     <motion.button className="btn2" whileHover={{ scale: 1.2 }}
               onHoverStart={e => {}}
@@ -66,7 +61,7 @@ I am an enthusiastic DSA problem solver and solved problems across platform such
             </div>
         </div>
 
-
+        </div>
         <div className="about-stats">
             <h5 className="stat-title">My Skills</h5>
             <div className="progress-bars">
@@ -74,45 +69,45 @@ I am an enthusiastic DSA problem solver and solved problems across platform such
             <div className="progress-bar">
                 <p className="prog-title">C++</p>
                 <div className="progress-con">
-                    <p className="prog text">80%</p>
+                    <p className="prog text">85%</p>
                     <div className="progress">
-                        <span className="html"> </span>
+                        <span className="C"> </span>
                     </div>
                 </div>
             </div>
             <div className="progress-bar">
-                <p className="prog-title">CSS</p>
+                <p className="prog-title">React</p>
                 <div className="progress-con">
-                    <p className="prog text">80%</p>
+                    <p className="prog text">70%</p>
                     <div className="progress">
-                        <span className="css"> </span>
+                        <span className="React"> </span>
                     </div>
                 </div>
             </div>
             <div className="progress-bar">
-                <p className="prog-title">JS</p>
+                <p className="prog-title">JavaScript</p>
                 <div className="progress-con">
-                    <p className="prog text">80%</p>
+                    <p className="prog text">70%</p>
                     <div className="progress">
                         <span className="js"> </span>
                     </div>
                 </div>
             </div>
             <div className="progress-bar">
-                <p className="prog-title">Python</p>
+                <p className="prog-title">Node.js</p>
                 <div className="progress-con">
-                    <p className="prog text">80%</p>
+                    <p className="prog text">70%</p>
                     <div className="progress">
-                        <span className="python"> </span>
+                        <span className="Node"> </span>
                     </div>
                 </div>
             </div>
             <div className="progress-bar">
-                <p className="prog-title">Java</p>
+                <p className="prog-title">MongoDB</p>
                 <div className="progress-con">
-                    <p className="prog text">70%</p>
+                    <p className="prog text">60%</p>
                     <div className="progress">
-                        <span className="java"> </span>
+                        <span className="Mongodb"> </span>
                     </div>
                 </div>
             </div>
@@ -125,34 +120,14 @@ I am an enthusiastic DSA problem solver and solved problems across platform such
                     </div>
                 </div>
             </div>
-            <div className="progress-bar">
-                <p className="prog-title">React</p>
-                <div className="progress-con">
-                    <p className="prog text">80%</p>
-                    <div className="progress">
-                        <span className="react"> </span>
-                    </div>
-                </div>
-            </div>
-            <div className="progress-bar">
-                <p className="prog-title">Node</p>
-                <div className="progress-con">
-                    <p className="prog text">80%</p>
-                    <div className="progress">
-                        <span className="node"> </span>
-                    </div>
-                </div>
-            </div>
+            
+           
 
             </div>
         </div>
 
     </div>
-    </section>
 
-
-
-    </>
   )
 }
 

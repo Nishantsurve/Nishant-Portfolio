@@ -48,10 +48,15 @@
   .formContainer {
     flex: 1;
     position: relative;
+    display: flex;
+
     
     @include mobile {
       padding: 50px;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
 
@@ -76,7 +81,9 @@
         border-radius: 5px;
 
         @include mobile {
+          width: 140%;
           padding: 10px;
+          
         }
       }
 
@@ -87,6 +94,8 @@
         cursor: pointer;
         font-weight: 500;
         @include mobile {
+          width: 140%;
+
           padding: 10px;
         }
       }

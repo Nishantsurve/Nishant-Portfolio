@@ -56,7 +56,7 @@ const Single =({item}) =>{
                     <motion.button  whileHover={{ scale: 1.2 }}
               onHoverStart={e => {}}
               onHoverEnd={e => {}}
-              >See Demo</motion.button>
+              ><a href='https://github.com/Nishantsurve'>See Demo</a></motion.button>
                 </motion.div>
             </div>
             </div>

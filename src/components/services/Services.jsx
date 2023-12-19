@@ -45,12 +45,12 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b  whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+            <motion.b  whileHover={{color:"orange"}}><span>Unique</span></motion.b> Ideas
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b   whileHover={{color:"orange"}}>For Your</motion.b> Business.
+            <motion.b   whileHover={{color:"orange"}}><span>For Your</span></motion.b> Business.
           </h1>
           
         </div>
@@ -63,9 +63,7 @@ const Services = () => {
           <motion.h2 >Web Development</motion.h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            libero enim nisi aliquam 
           </p>
          
         </motion.div>
@@ -78,9 +76,7 @@ const Services = () => {
           <motion.h2 >Web scrapping</motion.h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            
           </p>
        
         </motion.div>
@@ -91,9 +87,7 @@ const Services = () => {
           <motion.h2 >Flutter Development</motion.h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            libero enim nisi aliquam consectetur 
           </p>
           
         </motion.div>

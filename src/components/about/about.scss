@@ -1,20 +1,20 @@
 @import "../../app.scss";
 
 
-.About1{
 
 .about{
 
     .main-title{
         text-align: center;
 
-   
-
         h2 {
 
             @include mobile{
-               align-items: center;
-            }
+                text-align: center;
+                font-size: 2rem;
+                span{font-size: 2rem;}
+
+             }
 
             position: relative;
             text-transform: uppercase;
@@ -22,6 +22,14 @@
             font-weight: 700;
             span { color: orange }
             .bg-text {
+
+
+              @include mobile{
+                margin-top: 65px;
+                font-size: 3rem;
+                
+                 }
+
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -35,8 +43,18 @@
         }
 
     }
-
+.wrapper{
+    max-width: 1366px;
+    height: 100%;
+    margin-top: 40px;
     .about-container{
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
 
 
     display: grid;
@@ -48,13 +66,24 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
+        margin-left: 80px;
+        margin-top: 50px;
+
+       @include mobile{
+        margin-top: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+
       
         .about-item {
-            width: 90%;
-            height: 60%;
+            width: 100%;
+            height: 75%;
 
             @include mobile{
-            height: 20%;
+            height: 30%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -67,25 +96,39 @@
             &:hover {
                 cursor: default;
                 transform: translateY(-5px);
+
+                @include mobile{
+                    border: 2px solid orange; 
+                }
+
                 border: 1px solid orange;
                 box-shadow: 1px 4px 15px rgba(0,0,0,.32);
             }
+
+
+
             .abt-text {
                 padding: 1.5rem;
                 display: flex;
                 flex-direction: column;
                 .large-text {
-                    font-size: 3rem;
+                    font-size: 1.8rem;
                     font-weight: 700;
                     color:orange
                 }
                 .small-text {
+
+                    @include mobile{
+                        font-size: 1rem;
+                    }
+
                     padding-left: 3rem;
                     position: relative;
                     text-transform: uppercase;
                     font-size: 1.2rem;
                     color: #dbe1e8;;
                     letter-spacing: 2px;
+                    margin-top: 6px;
                     &::before {
                         content: '';
                         position: absolute;
@@ -106,6 +149,12 @@
 
             padding-left: 4rem;
         p {
+
+         @include mobile{
+            font-size: 15px;
+         }
+         font-size: 17.5px;
+
             line-height: 2rem;
             padding: 1rem;
             color: #dbe1e8;;
@@ -115,8 +164,10 @@
             font-size: 2rem;
             text-transform: uppercase;
             color: orange;
+            span{color: white;}
         }
 button{
+    
         padding: 20px;
         font-size: 15px;
         border: 1px solid black;
@@ -132,15 +183,22 @@ button{
                 
             }
         }
-
+    }
         .about-stats {
          padding-bottom: 4rem;
          width: 80%;
          height: 80%;
          padding-left: 300px;
          gap: 2px;
+         margin-bottom: 120px;
 
             .stat-title {
+
+                @include mobile{
+                    align-items: center;
+                    margin-left: -160px;
+                }
+
                 text-transform: uppercase;
                 font-size: 1.9rem;
                 text-align: center;
@@ -162,15 +220,27 @@ button{
             .progress-bars {
                 
               
-          
+           @include mobile{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            
+           }
                 
                
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 2rem;
+                margin-top: -30px;
                 .progress-bar {
                     display: flex;
                     flex-direction: column;
+
+                    @include mobile{
+                        margin-left: -450px;
+                    }
                     
                   
                     .prog-title {
@@ -182,14 +252,25 @@ button{
                         align-items: center;
                         .prog-text {
                             color:  #b2becd;
+                            font-weight: 500;
                         }
                         .progress {
+
+                            @include mobile{
+                                width: 50%;
+                            }
+
                             width: 100%;
                             height: .45rem;
                             background-color: #454e56;
                             margin-left: 1rem;
                             position: relative;
                             span {
+
+                                @include mobile{
+                                    width: 50%;
+                                }
+
                                 position: absolute;
                                 top: 0;
                                 left: 0;
@@ -198,11 +279,11 @@ button{
                                 transition: all .4s ease-in-out;
                                 width: 60%;
                             }
-                            .html { width: 80%; }
-                            .css { width: 95%; }
-                            .js { width: 75%; }
-                            .react{ width: 60%; }
-                            .node{ width: 87%; }
+                            .C { width: 85%; }
+                            .React { width: 70%; }
+                            .js { width: 70%; }
+                            .Mongodb{ width: 60%; }
+                            .Node{ width: 70%; }
                             .python{ width: 70%; }
                             .java {width: 70%; }
                             .Docker{width: 40%; }                                                     
@@ -213,10 +294,4 @@ button{
         }
 
     }
-
-}
-
-
-
-
 

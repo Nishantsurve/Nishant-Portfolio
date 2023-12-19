@@ -1,4 +1,6 @@
 @import "../../app.scss";
+
+
 .services {
   background: linear-gradient(180deg, #0c0c1d, #111132);
   height: 100%;
@@ -32,7 +34,7 @@
       border-top: 0.5px solid gray;
 
       @include mobile {
-        width: 300px;
+        width: 280px;
       }
     }
   }
@@ -50,6 +52,7 @@
       display: flex;
       align-items: center;
       gap: 50px;
+     
 
       @include mobile {
         flex-direction: column;
@@ -72,9 +75,10 @@
       h1 {
         font-size: 80px;
         font-weight: 100;
+        span{color: orange;}
 
         @include mobile {
-          font-size: 36px;
+          font-size: 32px;
         }
       }
 
@@ -100,16 +104,18 @@
     display: flex;
     max-width: 1366px;
     margin: auto;
-    gap: 13px;
-   
-   
+    gap: 10px;
 
     @include mobile {
       flex-direction: column;
+      height: 80%;
       width: 100%;
     }
 
     .box {
+
+      margin-bottom: 30px;
+
       padding: 50px;
       border: 0.5px solid gray;
       display: flex;
@@ -120,28 +126,16 @@
       &:hover {
         cursor: default;
         transform: translateY(-5px);
-        border: 1px solid orange;
+        border: 2px solid orange;
         box-shadow: 1px 4px 15px rgba(0,0,0,.32);
     }
       
-
-      @include mobile {
-        border: none;
-        align-items: center;
-        gap: 20px;
-        padding: 10px;
-      }
-
       h2{
         font-size: 32px;
         color: orange;
       }
 
-      p {
-        @include mobile {
-          display: none;
-        }
-      }
+   
 
       button {
         padding: 10px;
@@ -149,14 +143,7 @@
         border: none;
         cursor: pointer;
 
-        @include mobile {
-          background-color: transparent;
-          border: 1px solid orange;
-          border-radius: 5px;
-          color: orange;
-          width: 50%;
-          padding: 5px;
-        }
+     
       }
     }
   }
