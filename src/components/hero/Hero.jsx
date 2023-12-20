@@ -110,7 +110,7 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Problem Solver & Backend Developer
+        Creating Solutions that makes an impact.
       </motion.div>
       <motion.div   className="imageContainer">
         <motion.img src="/Portfolio_image.jpg" alt=""  
