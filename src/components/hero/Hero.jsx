@@ -42,6 +42,9 @@ const PDF_FILE_URL='http://localhost:5173/Nishantsurve_Resume.pdf';
 
 const Hero = () => {
 
+  const items=[
+    'Contact',
+]
 
   const downloadFileAtURL=(url) =>{
     const fileName=url.split("/").pop()
@@ -73,9 +76,14 @@ const Hero = () => {
               onHoverStart={e => {}}
               onHoverEnd={e => {}}
               
+              
               >
               
-            Connect
+              {items.map( item =>(
+            <motion.a href={`#${item}`} key={item} 
+              >{item}</motion.a>
+             ))}
+
             </motion.button>
 
             <motion.button className="btn2" whileHover={{ scale: 1.2 }}
@@ -104,8 +112,8 @@ const Hero = () => {
       >
         Problem Solver & Backend Developer
       </motion.div>
-      <motion.div className="imageContainer">
-        <motion.img src="/Hero-modified.png" alt=""  
+      <motion.div   className="imageContainer">
+        <motion.img src="/Portfolio_image.jpg" alt=""  
     />
       </motion.div>
     </div>

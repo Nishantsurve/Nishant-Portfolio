@@ -26,6 +26,12 @@
       font-size: 20px;
       color: gray;
       text-align: right;
+
+      @include mobile{
+        margin-top: 15px;
+        margin-left: 38px;
+      }
+
     }
 
     hr {
@@ -35,6 +41,7 @@
 
       @include mobile {
         width: 280px;
+        margin-bottom: 5px;
       }
     }
   }
@@ -79,6 +86,7 @@
 
         @include mobile {
           font-size: 32px;
+          
         }
       }
 
@@ -110,9 +118,18 @@
       flex-direction: column;
       height: 80%;
       width: 100%;
+      margin-top: 8px;
+      gap: 5px;
     }
 
     .box {
+
+      @include mobile{
+        width: 90%;
+        height: 60%;
+        margin-bottom: 20px;
+        margin-left: 20px;
+      }
 
       margin-bottom: 30px;
 
@@ -133,7 +150,17 @@
       h2{
         font-size: 32px;
         color: orange;
+        @include mobile{
+          font-size: 19px;
+          margin-top:-10px;
+        }
       }
+
+    p{
+      @include mobile{
+
+      }
+    }
 
    
 

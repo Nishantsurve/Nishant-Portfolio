@@ -29,9 +29,8 @@ const About = () => {
             <div className="left-about">
             <motion.h4 color="orange" >About <span>Me</span></motion.h4>
                     <p>
-                    I'm Nishant Surve, a passionate and self-resilient person aspiring to become a Software Developer with an aim to solve problems and designing solutions.
-My interests includes Backend development , Cloud Computing and familiar with Cross platform development as Flutter Framework,
-I am an enthusiastic DSA problem solver and solved problems across platform such as LeetCode, Codechef, Codestudio.
+                    I am Nishant Surve, a passionate and self-resilient person aspiring to become a Software Developer with an aim to solve problems and designing solutions.
+I have specialize in Web Development and familiar with Cross platform development as Flutter Framework and an Proficient problem solver and solved more than 700+ problems across platform such as LeetCode, Codechef.
                     </p>
                     <motion.button className="btn2" whileHover={{ scale: 1.2 }}
               onHoverStart={e => {}}
@@ -56,6 +55,8 @@ I am an enthusiastic DSA problem solver and solved problems across platform such
                         <p className="small-text">Data Structure &<br/>Algorithms</p>
                     </div>
                 </div>
+
+         
 
                
             </div>

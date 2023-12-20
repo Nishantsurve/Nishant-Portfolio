@@ -72,6 +72,10 @@
       flex-direction: column;
       gap: 20px;
 
+      @include mobile{
+        margin-right: 69px;
+      }
+
       input,
       textarea {
         padding: 20px;
@@ -79,11 +83,12 @@
         border: 1px solid white;
         color: white;
         border-radius: 5px;
+        width: 620px;
 
         @include mobile {
-          width: 140%;
+          width: 190%;
           padding: 10px;
-          
+          margin-left: -20px;
         }
       }
 
@@ -93,12 +98,18 @@
         background-color: orange;
         cursor: pointer;
         font-weight: 500;
+        width: 100%;
+        font-size: 18px;
         @include mobile {
-          width: 140%;
-
+          width: 190%;
+          font-size: 16px;
+          font-weight: 500;
+          margin-left: -20px;
           padding: 10px;
         }
       }
     }
   }
 }
+
+

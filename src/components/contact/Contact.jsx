@@ -55,7 +55,7 @@ const Contact = () => {
 
         <motion.div className="item"  variants={variants}>
           <motion.h2 >Address</motion.h2>
-          <span>Jadhav Nagar ,near Ceratic Greens,Katraj</span>
+          <span>Hno.317 Jadhav Nagar,Near Ceratic Greens,Katraj,Pune</span>
         </motion.div>
 
         <motion.div className="item"  variants={variants}>
@@ -112,7 +112,7 @@ onSubmit={sendEmail}
 <input type="email"  required placeholder="Email" name="email"></input>
 <textarea rows={8} placeholder="Message" name="message"></textarea>
 <motion.button     
-              whileHover={{ scale: 1.2 }}
+              whileHover={{ scale: 0.9 }}
               onHoverStart={e => {}}
               onHoverEnd={e => {}}>Submit</motion.button>
 {error && "Error"}

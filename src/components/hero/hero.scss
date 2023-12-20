@@ -5,6 +5,8 @@
   overflow: hidden;
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
+  width: 100%;
+  margin: auto;
 
   .wrapper {
     max-width: 1366px;
@@ -66,8 +68,10 @@
   }
 
   .imageContainer {
-    height: 100%;
-    position: absolute;
+    height: 80%;
+   margin-top: 10px;
+   margin-right: 10px; 
+   position: absolute;
     top: 0;
     right: 0;
 
@@ -82,10 +86,29 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border: none;
+      
+
+      @include mobile{
+      border-radius: 18px;
+      margin-left: 11.5px;
     }
+  
+    border-radius: 18px;
+
+
+    &:hover {
+      cursor: default;
+      transform: translateY(-5px);
+      border: 3px solid rebeccapurple;
+      box-shadow: 1px 4px 15px rgba(0,0,0,.32);
+  }
+
+  }
   }
 
   .slidingTextContainer {
+    margin-bottom:-25px;
     position: absolute;
     font-size: 19vh;
     bottom: 0;
@@ -93,5 +116,8 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+    @include mobile{
+      display: none;
+    }
   }
 }

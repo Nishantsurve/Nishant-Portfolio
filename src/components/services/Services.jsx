@@ -45,7 +45,7 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b  whileHover={{color:"orange"}}><span>Unique</span></motion.b> Ideas
+            <motion.b  whileHover={{color:"orange"}}><span>Creating smarter faster </span></motion.b>solutions  
           </h1>
         </div>
         <div className="title">
@@ -60,10 +60,9 @@ const Services = () => {
           className="box"
           whileHover={{scale:0.9}}
         >
-          <motion.h2 >Web Development</motion.h2>
+          <motion.h2 >FrontEnd Development</motion.h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam 
+            I am front-end developer with experience in building responsive,animated and optimized sites.
           </p>
          
         </motion.div>
@@ -73,9 +72,9 @@ const Services = () => {
           whileHover={{scale:0.9}}
          
         >
-          <motion.h2 >Web scrapping</motion.h2>
+          <motion.h2 >Backend Development</motion.h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+           I have good understanding of Node.js,Express.js,Python for handling data storage, processing, and retrieval.
             
           </p>
        
@@ -86,8 +85,7 @@ const Services = () => {
         >
           <motion.h2 >Flutter Development</motion.h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur 
+          I have specialize in utilizing the Flutter framework to create cross-platform mobile applications for both Android and iOS platforms 
           </p>
           
         </motion.div>

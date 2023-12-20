@@ -4,6 +4,11 @@
     height: 100px;
     
     .wrapper{
+
+
+
+
+
         max-width: 1366px;
         margin: auto;
         display: flex;
@@ -16,13 +21,32 @@
             padding: 20px;
         }
 
+        .logo{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            @include mobile{
+                display: none;
+            }
+
+        img{
+            width: 20%;
+            margin-top: 37px;
+            height: 20%;
+            
+        }
+
         span{
+            margin-top: 50px;
             font-weight: bold;
 
             @include mobile{
                 display: none;
             }
         }
+
+    }
 
         .social{
             display: flex;

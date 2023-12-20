@@ -8,7 +8,14 @@ function Navbar() {
       <Sidebar/>
 
       <div className="wrapper">
-    <span>Nishant Surve</span>
+        
+        <div className="logo">
+
+          <img src="/favicon.ico" alt=""/>
+         <span>Nishant Surve</span>
+
+    </div>
+
   <div className="social">
     <a href="https://twitter.com/NishantS208"><img src="/Twitter.png" alt="" /></a>
     <a href="#"><img src="/instagram.png" alt="" /></a>
