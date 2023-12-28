@@ -1,25 +1,28 @@
 @import "../../app.scss";
 
-
-
+                                                                                                                                                                                                                                                                
 .about{
 
     .main-title{
+        margin-top: 20px;
         text-align: center;
+        span{color: orange;}
 
+
+        
         h2 {
 
             @include mobile{
                 text-align: center;
                 font-size: 2rem;
-                span{font-size: 2rem;}
+                span{font-size: 2rem; }
                 margin-top: 29px;
 
              }
 
             position: relative;
             text-transform: uppercase;
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: 700;
             span { color: orange }
             .bg-text {
@@ -28,6 +31,7 @@
               @include mobile{
                 margin-top: 65px;
                 font-size: 3rem;
+                display: none;
                 
                  }
 
@@ -39,7 +43,7 @@
                 z-index: -1;
                 transform: translate(-50%, -50%);
                 font-weight: 800;
-                font-size: 6.3rem;
+                font-size: 5.3rem;
             }
         }
 
@@ -70,11 +74,12 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 3rem;
         margin-left: 80px;
-        margin-top: 50px;
+        margin-top: -20px;
+        margin-right: 80px;
 
        @include mobile{
         margin-top: 20px;
-        margin-left: 20px;
+        margin-left: 80px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -116,7 +121,7 @@
                 display: flex;
                 flex-direction: column;
                 .large-text {
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                     font-weight: 700;
                     color:orange
                 }
@@ -129,7 +134,7 @@
                     padding-left: 3rem;
                     position: relative;
                     text-transform: uppercase;
-                    font-size: 1.2rem;
+                    font-size: 0.8rem;
                     color: #dbe1e8;;
                     letter-spacing: 2px;
                     margin-top: 6px;
@@ -150,14 +155,20 @@
 
     .left-about{
 
+        margin-left: -100px;  
+        margin-top: -25px; 
+        padding-left: 3rem;
 
-            padding-left: 4rem;
+        @include mobile{
+            margin-left: 19px;
+        }
+
         p {
 
          @include mobile{
-            font-size: 15px;
+            font-size: 13px;
          }
-         font-size: 17.5px;
+         font-size: 14.5px;
 
             line-height: 2rem;
             padding: 1rem;
@@ -165,15 +176,19 @@
         }
         h4 {
             margin-left: 20px;
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-transform: uppercase;
             color: orange;
             span{color: white;}
         }
 button{
-    
+ 
+        @include mobile{
+            font-size: 10px;
+        }
+
         padding: 20px;
-        font-size: 15px;
+        font-size: 9px;
         border: 1px solid black;
         border-radius: 10px;
         background-color: orange;
@@ -189,12 +204,19 @@ button{
         }
     }
         .about-stats {
+            margin-top:-110px;
          padding-bottom: 4rem;
          width: 80%;
          height: 80%;
          padding-left: 300px;
          gap: 2px;
          margin-bottom: 120px;
+         
+
+
+         @include mobile{
+            display: none;
+         }
 
             .stat-title {
 
@@ -277,20 +299,20 @@ button{
 
                                 position: absolute;
                                 top: 0;
-                                left: 0;
-                                height: 100%;
+                                left: 0;                                                                                                                                                                                                                                                                                                                
+                               height: 100%;
                                 background-color:  orange;
                                 transition: all .4s ease-in-out;
                                 width: 60%;
                             }
                             .C { width: 85%; }
                             .React { width: 70%; }
-                            .js { width: 70%; }
-                            .Mongodb{ width: 60%; }
+                            .js { width: 75%; }
+                            .Mongodb{ width: 50%; }
                             .Node{ width: 70%; }
                             .python{ width: 70%; }
                             .java {width: 70%; }
-                            .Docker{width: 40%; }                                                     
+                            .Django{width: 40%; }                                                     
                         }
                     }
                 }

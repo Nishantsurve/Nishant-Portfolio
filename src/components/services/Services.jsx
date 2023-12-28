@@ -34,61 +34,67 @@ const Services = () => {
       ref={ref}
       animate={"animate"}
     >
+
+
+
       <motion.div className="textContainer" variants={variants}>
-        <motion.p  >
+        <p>
           I focus on helping your brand grow
           <br /> and move forward
-        </motion.p>
+        </p>
         <hr />
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b  whileHover={{color:"orange"}}><span>Creating smarter faster </span></motion.b>solutions  
+            <motion.b  whileHover={{color:"orange"}}>Creating smarter faster </motion.b><span>Solutions</span>
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b   whileHover={{color:"orange"}}><span>For Your</span></motion.b> Business.
+            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> <span>Business.</span>
           </h1>
-          
+         
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
-          whileHover={{scale:0.9}}
+          whileHover={{ background: "lightgray", color: "black" }}
+          
         >
-          <motion.h2 >FrontEnd Development</motion.h2>
+          <img src="/front-end-programming.png" alt="" />
+          <h2>FrontEnd Development</h2>
           <p>
-            I am front-end developer with experience in building responsive,animated and optimized sites.
+          I am front-end developer with experience in building responsive,animated and optimized sites.
           </p>
-         
-        </motion.div>
-  
-        <motion.div
-          className="box"
-          whileHover={{scale:0.9}}
-         
-        >
-          <motion.h2 >Backend Development</motion.h2>
-          <p>
-           I have good understanding of Node.js,Express.js,Python for handling data storage, processing, and retrieval.
-            
-          </p>
-       
+          
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{scale:0.9}}
+          whileHover={{ background: "lightgray", color: "black" }}
+          
         >
-          <motion.h2 >Flutter Development</motion.h2>
+          <img src="/backend.png" alt="" />
+          <h2>BackendDevelopment</h2>
+          <p>
+          I have good understanding of Node.js,Express.js,Python for handling datastorage, processing, and retrieval.
+          </p>
+         
+        </motion.div>
+        <motion.div
+          className="box"
+          whileHover={{ background: "lightgray", color: "black" }}
+        >
+          <img src="/icons8-flutter-48.png" alt="" />
+          <h2>Flutter Development</h2>
           <p>
           I have specialize in utilizing the Flutter framework to create cross-platform mobile applications for both Android and iOS platforms 
           </p>
           
         </motion.div>
+       
       </motion.div>
     </motion.div>
   );

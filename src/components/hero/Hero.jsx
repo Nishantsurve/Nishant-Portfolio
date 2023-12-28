@@ -32,29 +32,16 @@ const sliderVariants = {
     transition: {
       repeat: Infinity,
       repeatType:"mirror",
-      duration: 25,
+      duration: 20,
     },
   },
 };
 
-
-const PDF_FILE_URL='http://localhost:5173/Nishantsurve_Resume.pdf';
-
 const Hero = () => {
 
-  const items=[
+  const items =[
     'Contact',
-]
-
-  const downloadFileAtURL=(url) =>{
-    const fileName=url.split("/").pop()
-     const aTag = document.createElement("a");
-     aTag.href=url;
-     aTag.setAttribute("download",fileName)
-     document.body.appendChild(aTag);
-     aTag.click();
-     aTag.remove();
-  };
+  ]
 
   return (
     <div className="hero">
@@ -69,39 +56,22 @@ const Hero = () => {
           <motion.h1 variants={textVariants}>
             Web developer & Problem Solver
           </motion.h1>
-
           <motion.div variants={textVariants} className="buttons">
-            
-            <motion.button whileHover={{ scale: 1.2 }}
-              onHoverStart={e => {}}
-              onHoverEnd={e => {}}
-              
-              
-              >
-              
-              {items.map( item =>(
+            <motion.button variants={textVariants}>
+            {items.map( item =>(
             <motion.a href={`#${item}`} key={item} 
               >{item}</motion.a>
              ))}
-
             </motion.button>
-
-            <motion.button className="btn2" whileHover={{ scale: 1.2 }}
-              onHoverStart={e => {}}
-              onHoverEnd={e => {}}
-              onClick={()=>{downloadFileAtURL(PDF_FILE_URL)}}
-             
-              >
-           Resume/CV
-           </motion.button>
-
-          </motion.div>
-          <motion.img
+            <motion.button className="btn1" variants={textVariants} whileHover={{scale:1.1}}><a href="https://drive.google.com/file/d/1oIlmaPF7Oe1IKZN2UaP3f_POJs_AQLba/view?usp=sharing">Resume</a></motion.button>
+            <motion.img
             variants={textVariants}
             animate="scrollButton"
             src="/scroll.png"
             alt=""
           />
+          </motion.div>
+          
         </motion.div>
       </div>
       <motion.div
@@ -110,12 +80,11 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Creating Solutions that makes an impact.
+        Web Dev & Exploring Web 3.0  
       </motion.div>
-      <motion.div   className="imageContainer">
-        <motion.img src="/Portfolio_image.jpg" alt=""  
-    />
-      </motion.div>
+      <div className="imageContainer">
+        <img src="/Portfolio_image.jpg" alt="" />
+      </div>
     </div>
   );
 };
