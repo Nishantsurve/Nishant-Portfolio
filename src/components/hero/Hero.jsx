@@ -78,8 +78,9 @@ const Hero = () => {
               >
               
               {items.map( item =>(
-            <motion.a href={`#${item}`} key={item} 
-              >{item}</motion.a>
+            <motion.a href={`#${item}`} key={item}>
+              {item}
+            </motion.a>
              ))}
 
             </motion.button>

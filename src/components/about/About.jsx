@@ -1,6 +1,7 @@
 import React from 'react';
 import "./about.scss";
 import {motion} from 'framer-motion';
+import CircularProgress from '@mui/joy/CircularProgress';
 
 
 const PDF_FILE_URL='http://localhost:5173/Nishant_Surve_CV.pdf';
@@ -65,73 +66,17 @@ const About = () => {
         </div>
         <div className="about-stats">
             <h5 className="stat-title">My Skills</h5>
+
             <div className="progress-bars">
 
-            <div className="progress-bar">
-                <p className="prog-title">C++</p>
-                <div className="progress-con">
-                    <p className="prog text">85%</p>
-                    <div className="progress">
-                        <span className="C"> </span>
-                    </div>
-                </div>
-            </div>
-            <div className="progress-bar">
-                <p className="prog-title">Python</p>
-                <div className="progress-con">
-                    <p className="prog text">60%</p>
-                    <div className="progress">
-                        <span className="python"> </span>
-                    </div>
-                </div>
-            </div>
-            <div className="progress-bar">
-                <p className="prog-title">React</p>
-                <div className="progress-con">
-                    <p className="prog text">70%</p>
-                    <div className="progress">
-                        <span className="React"> </span>
-                    </div>
-                </div>
-            </div>
-            <div className="progress-bar">
-                <p className="prog-title">JavaScript</p>
-                <div className="progress-con">
-                    <p className="prog text">70%</p>
-                    <div className="progress">
-                        <span className="js"> </span>
-                    </div>
-                </div>
-            </div>
-            <div className="progress-bar">
-                <p className="prog-title">Node.js</p>
-                <div className="progress-con">
-                    <p className="prog text">70%</p>
-                    <div className="progress">
-                        <span className="Node"> </span>
-                    </div>
-                </div>
-            </div>
-            <div className="progress-bar">
-                <p className="prog-title">MongoDB</p>
-                <div className="progress-con">
-                    <p className="prog text">60%</p>
-                    <div className="progress">
-                        <span className="Mongodb"> </span>
-                    </div>
-                </div>
-            </div>
-            <div className="progress-bar">
-                <p className="prog-title">SQL</p>
-                <div className="progress-con">
-                    <p className="prog text">60%</p>
-                    <div className="progress">
-                        <span className="sql"> </span>
-                    </div>
-                </div>
-            </div>
-            
-           
+            <CircularProgress sx={{ '--CircularProgress-size': '80px', '--CircularProgress-progressColor': 'orange', }}  determinate value={84.67}>C++</CircularProgress>
+            <CircularProgress sx={{ '--CircularProgress-size': '80px', '--CircularProgress-progressColor': 'orange', }}  determinate value={76.67}>Js</CircularProgress>
+            <CircularProgress sx={{ '--CircularProgress-size': '80px', '--CircularProgress-progressColor': 'orange', }}  determinate value={66.67}>React</CircularProgress>
+            <CircularProgress sx={{ '--CircularProgress-size': '80px', '--CircularProgress-progressColor': 'orange', }}  determinate value={66.67}>Node.js</CircularProgress>
+            <CircularProgress sx={{ '--CircularProgress-size': '80px', '--CircularProgress-progressColor': 'orange', }}  determinate value={60.67}>Express</CircularProgress>
+         <CircularProgress sx={{ '--CircularProgress-size': '80px', '--CircularProgress-progressColor': 'orange', }}  determinate value={59.67}>SQL</CircularProgress>
+         <CircularProgress sx={{ '--CircularProgress-size': '80px', '--CircularProgress-progressColor': 'orange', }}  determinate value={55.67}>MongoDB</CircularProgress>
+        
 
             </div>
         </div>

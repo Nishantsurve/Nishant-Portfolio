@@ -86,7 +86,7 @@
         color: orange;
         span{color: white;}
         @include mobile {
-          font-size: 36px;
+          font-size: 31px;
         }
       }
 
@@ -145,6 +145,12 @@
       flex-direction: column;
       justify-content: space-between;
 
+      img{
+        @include mobile{
+          display: none;
+        }
+      }
+
       @include mobile {
         border: none;
         align-items: center;
@@ -165,13 +171,14 @@
         color: orange;
         @include mobile{
           color: orange;
+          font-size: 15px;
         }
       }
 
       p {
         font-size: 12px;
         @include mobile {
-          
+          font-size: 13px;
         }
       }
 

@@ -166,7 +166,9 @@
         p {
 
          @include mobile{
-            font-size: 13px;
+            margin-top: -30px;
+            margin-right: 20px;
+            font-size: 12px;
          }
          font-size: 14.5px;
 
@@ -180,11 +182,15 @@
             text-transform: uppercase;
             color: orange;
             span{color: white;}
+            @include mobile{
+                display: none;
+            }
         }
 button{
  
         @include mobile{
-            font-size: 10px;
+            display: none;
+           
         }
 
         padding: 20px;
@@ -204,7 +210,7 @@ button{
         }
     }
         .about-stats {
-            margin-top:-110px;
+            margin-top:-140px;
          padding-bottom: 4rem;
          width: 80%;
          height: 80%;
@@ -254,68 +260,11 @@ button{
             width: 100%;
             
            }
-                
-               
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: 2rem;
-                margin-top: -30px;
-                .progress-bar {
-                    display: flex;
-                    flex-direction: column;
-
-                    @include mobile{
-                        margin-left: -450px;
-                    }
-                    
-                  
-                    .prog-title {
-                        text-transform: uppercase;
-                        font-weight: 500;
-                    }
-                    .progress-con {
-                        display: flex;
-                        align-items: center;
-                        .prog-text {
-                            color:  #b2becd;
-                            font-weight: 500;
-                        }
-                        .progress {
-
-                            @include mobile{
-                                width: 50%;
-                            }
-
-                            width: 100%;
-                            height: .45rem;
-                            background-color: #454e56;
-                            margin-left: 1rem;
-                            position: relative;
-                            span {
-
-                                @include mobile{
-                                    width: 50%;
-                                }
-
-                                position: absolute;
-                                top: 0;
-                                left: 0;                                                                                                                                                                                                                                                                                                                
-                               height: 100%;
-                                background-color:  orange;
-                                transition: all .4s ease-in-out;
-                                width: 60%;
-                            }
-                            .C { width: 85%; }
-                            .React { width: 70%; }
-                            .js { width: 75%; }
-                            .Mongodb{ width: 50%; }
-                            .Node{ width: 70%; }
-                            .python{ width: 70%; }
-                            .java {width: 70%; }
-                            .Django{width: 40%; }                                                     
-                        }
-                    }
-                }
+           display: flex;
+           flex-direction: row;
+           gap: 80px; /* Adjust the gap between the progress bars as needed */
+           align-items: center; /* Aligns the progress bars vertically in the center */
+  margin-left: -150px;
             }
         }
 
