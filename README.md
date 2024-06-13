@@ -1,5 +1,11 @@
 ## Nishant-Portfolio
 
+# snapshot
+
+![Screenshot (364)](https://github.com/Nishantsurve/Nishant-Portfolio/assets/104264099/4a7a49cf-af77-459f-bc9d-09f3ae1f1c10)
+
+![Screenshot (365)](https://github.com/Nishantsurve/Nishant-Portfolio/assets/104264099/f25502f1-bffc-40b5-a3fc-2cbedb4e40a1)
+
 # Getting Started
 
 Fork this repository and clone it into the local machine using 
