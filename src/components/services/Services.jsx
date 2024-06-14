@@ -87,7 +87,7 @@ const Services = () => {
           className="box"
           whileHover={{scale:0.9}}
         >
-          <img src="/icons8-flutter-48.png" alt="" />
+          
           <motion.h2>Full Stack Development</motion.h2>
           <p>
           Full stack developer with experience in JavaScript frameworks like React for the front end, and Node.js with Express.js for the backend. Proficient in SQL and MongoDB databases, and experienced in creating responsive web applications. Skilled in integrating real-time features using Socket.IO
