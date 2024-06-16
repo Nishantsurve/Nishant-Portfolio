@@ -112,7 +112,7 @@ const Hero = () => {
         Creating Solutions that makes an impact.
       </motion.div>
       <motion.div   className="imageContainer">
-        <motion.img src="/Portfolio_image.jpg" alt=""  
+        <motion.img src="images/Portfolio_image.jpg" alt=""  
     />
       </motion.div>
     </div>

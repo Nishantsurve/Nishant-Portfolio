@@ -46,7 +46,7 @@ const Services = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/people.webp" alt="" />
+          <img src="images/people.webp" alt="" />
           <h1>
             <motion.b  whileHover={{color:"orange"}}>Creating smarter faster </motion.b><span>Solutions</span>
           </h1>
@@ -64,7 +64,7 @@ const Services = () => {
           whileHover={{scale:0.9}}
           
         >
-          <img src="/front-end-programming.png" alt="" />
+          <img src="images/front-end-programming.png" alt="" />
           <motion.h2>FrontEnd Development</motion.h2>
           <p>
           I am front-end developer with experience in building responsive,animated and optimized sites using frameworks like React,Next.js,TailwindCSS,framer-motion libraries.
@@ -76,7 +76,7 @@ const Services = () => {
           whileHover={{scale:0.9}}
           
         >
-          <img src="/backend.png" alt="" />
+          <img src="images/backend.png" alt="" />
           <motion.h2>Backend Development</motion.h2>
           <p>
           I am proficient in developing REST-APIs using Node.js and Express.js, as well as working with databases such as MySQL and MongoDB for storing, manipulating, and retrieving data.Skilled in building efficient server-side applications and real-time communication systems using Socket.IO
