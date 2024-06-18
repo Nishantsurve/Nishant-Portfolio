@@ -26,24 +26,42 @@ const Contact = () => {
 
   const isInView = useInView(ref, { margin: "-100px" });
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
+    setError(false);
+    setSuccess(false);
 
-    emailjs
-      .sendForm(
+    const formData = new FormData(formRef.current);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      message: formData.get('message'),
+    };
+
+    try {
+      // Send email using EmailJS
+      const emailResult = await emailjs.sendForm(
         "service_u6v3xvr",
         "template_tr8ciid",
         formRef.current,
         "HD7rUTdrnpLuRzucu"
-      )
-      .then(
-        (result) => {
-          setSuccess(true)
-        },
-        (error) => {
-          setError(true);
-        }
       );
+      console.log('EmailJS Result:', emailResult.text);
+      
+      // Send form data to the backend using Axios
+      const axiosResult = await axios.post('http://localhost:5173/messages', data);
+      console.log('Axios Result:', axiosResult.statusText);
+      
+      if (emailResult.status === 200 && axiosResult.status === 200) {
+        setSuccess(true);
+      } else {
+        throw new Error('Failed to submit form data');
+      }
+    } catch (err) {
+      console.error(err);
+      setError(true);
+    }
+      
   };
 
   return (
@@ -110,8 +128,8 @@ const Contact = () => {
           <input type="email" required placeholder="Email" name="email"/>
           <textarea rows={8} placeholder="Message" name="message"/>
           <button>Submit</button>
-          {error && "Error"}
-          {success && "Success"}
+          {error && <p style={{color: 'red'}}>Error</p>}
+          {success && <p style={{color: 'green'}}>Success</p>}
         </motion.form>
       </div>
     </motion.div>

@@ -46,15 +46,7 @@ const Hero = () => {
     'Contact',
 ]
 
-  const downloadFileAtURL=(url) =>{
-    const fileName=url.split("/").pop()
-     const aTag = document.createElement("a");
-     aTag.href=url;
-     aTag.setAttribute("download",fileName)
-     document.body.appendChild(aTag);
-     aTag.click();
-     aTag.remove();
-  };
+ 
 
   return (
     <div className="hero">
@@ -88,7 +80,7 @@ const Hero = () => {
             <motion.button className="btn2" whileHover={{ scale: 1.2 }}
               onHoverStart={e => {}}
               onHoverEnd={e => {}}
-              onClick={()=>{downloadFileAtURL(PDF_FILE_URL)}}
+              onClick={()=>{ window.location.href = 'https://drive.google.com/file/d/1W1_lIYVfFNOmP37cyuK3Bu8lrZjK8_we/view?usp=sharing';}}
              
               >
            Resume
