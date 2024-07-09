@@ -105,6 +105,13 @@
         }
 
         button {
+
+          @include mobile{
+            height: 35px;
+             width: 100px;
+             cursor: pointer;      
+          }
+
           background-color: orange;
           border: none;
           border-radius: 10px;
@@ -113,6 +120,8 @@
           cursor: pointer;
         }
       }
+
+
     }
   }
 }

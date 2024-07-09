@@ -20,6 +20,7 @@ const variants = {
 
 const Contact = () => {
   const ref = useRef();
+  // use for storing form data 
   const formRef = useRef();
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -80,10 +81,10 @@ const Contact = () => {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>Hno.317 Jadhav Nagar,Katraj,Pune</span>
+          <span>Katraj,Pune</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
+          <h2>Phone no</h2>
           <span>+91 9665268298</span>
         </motion.div>
       </motion.div>
